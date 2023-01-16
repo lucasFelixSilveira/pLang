@@ -1,2 +1,2 @@
-# pLang
-Uma linguagem de programação um pouco mais simples.
+# 📌 Instalação
+> Infelizmente o projeto ainda está em desenvolvimento.
