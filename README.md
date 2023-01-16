@@ -38,7 +38,8 @@ str:fix defaultWelcome = >> Bem vindo {user}! Aqui você poderá dar ideias para
 
 set > nome >> Ana >>
 
-cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )```
+cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )
+```
 - Ou mudar usando `Str()`
 ```plg
 str:mud nome = >> Lucas >>
@@ -46,4 +47,5 @@ str:fix defaultWelcome = >> Bem vindo {user}! Aqui você poderá dar ideias para
 
 set > nome Str(Ana)
 
-cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )```
+cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )
+```
