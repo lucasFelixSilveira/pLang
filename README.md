@@ -49,3 +49,14 @@ set > nome Str(Ana)
 
 cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )
 ```
+
+<h2>
+  <strong>
+    ✅ Condições:
+  </strong>
+</h2>
+
+- Para fazer uma if, voc|ê deve seguir as seguintes regras:
+- - **Para todas as Strings:** Você deve usa-las pelo método `Str()`
+- - **Operactionais:** `not`, `and`, `or` e outros do Java Script
+
