@@ -7,56 +7,39 @@
 
 <h2>
   <strong>
-    🧶 String:
+    🧶 Variáveis e constantes:
   </strong>
 </h2>
 
-- As strings aqui, em declarações, devem ser definidas entre `>>`, assim como o exemplo seguinte: 
-
-```plg
-str:fix minhaPrimeiraString = >> string >>
-``` 
-
-- Strings em elementos segundários, tem que ser definidas dentro do método `Str()`, exemplo abaixo:
-```plg
-str:fix nome = >> Lucas >>
-str:fix defaultWelcome = >> Bem vindo {user}! Aqui você poderá dar ideias para a linguágem evoluir! >>
-
-cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )
+- Para declarar uma `var` use:
+```plang
+var:string text = "Hello world"
 ```
 
-<div align="center">
-  <h3>
-    mudaveis
-  </h3>
-</div>
-
-- Você pode mudar usando `>>`
-```plg
-str:mud nome = >> Lucas >>
-str:fix defaultWelcome = >> Bem vindo {user}! Aqui você poderá dar ideias para a linguágem evoluir! >>
-
-set > nome >> Ana >>
-
-cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )
+- Para declarar uma `const` use:
+```plang
+const:string text = "Hello world"
 ```
-- Ou mudar usando `Str()`
-```plg
-str:mud nome = >> Lucas >>
-str:fix defaultWelcome = >> Bem vindo {user}! Aqui você poderá dar ideias para a linguágem evoluir! >>
-
-set > nome Str(Ana)
-
-cEclipsim( defaultWelcome().replace( Str({user}), nome().val ) )
-```
+- Uma variável é compatível com mudanças, você pode muda-la usando o método [Set](https://github.com/lucasFelixSilveira/pLang/edit/main/README.md#-------set--).
 
 <h2>
   <strong>
-    ✅ Condições:
+    ♻ Set:
   </strong>
 </h2>
 
-- Para fazer uma if, voc|ê deve seguir as seguintes regras:
-- - **Para todas as Strings:** Você deve usa-las pelo método `Str()`
-- - **Operactionais:** `not`, `and`, `or` e outros do Java Script
+- O método set pode ser usado para diversas coisas:
+- - Transformar uma [Var](https://github.com/lucasFelixSilveira/pLang/edit/main/README.md#-------vari%C3%A1veis-e-constantes--) em [Const](https://github.com/lucasFelixSilveira/pLang/edit/main/README.md#-------vari%C3%A1veis-e-constantes--) (Irreversível)
+```
+const:string ExempleName = "Lucas"; § Declara o nome do usuário
+var:string exemple = f@"Bem vindo, Sr. ${ExempleName}!"; § Declara uma string que contém o conteúdo da constante ExempleName.
 
+set static exemple; § Transforma a variável exemple em uma constante. 
+```
+- - Transformar uma [Var](https://github.com/lucasFelixSilveira/pLang/edit/main/README.md#-------vari%C3%A1veis-e-constantes--) em [Const](https://github.com/lucasFelixSilveira/pLang/edit/main/README.md#-------vari%C3%A1veis-e-constantes--) (Irreversível) Além de atribuir um novo valor a essa constate.
+```
+const:string ExempleName = "Lucas"; § Declara o nome do usuário
+var:string exemple = "Carregando..."; § Declara uma string que contém o conteúdo da constante ExempleName.
+
+set static exemple to f@"Bem vindo, Sr. ${ExempleName}!"; § Transforma a variável exemple em uma constante, além de antes definir outro valor a ela.
+```
