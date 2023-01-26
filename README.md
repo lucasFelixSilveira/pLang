@@ -39,7 +39,7 @@ set static exemple; § Transforma a variável exemple em uma constante.
 - - Transformar uma [Var](https://github.com/lucasFelixSilveira/pLang#-------vari%C3%A1veis-e-constantes--) em [Const](https://github.com/lucasFelixSilveira/pLang#-------vari%C3%A1veis-e-constantes--) (Irreversível) Além de atribuir um novo valor a essa constante.
 ```
 const:string ExempleName = "Lucas"; § Declara o nome do usuário
-var:string exemple = "Carregando..."; § Declara uma string que contém o conteúdo da constante ExempleName.
+var:string exemple = "Carregando..."; § Declara uma string "sem conteúdo"
 
 set static exemple to f@"Bem vindo, Sr. ${ExempleName}!"; § Transforma a variável exemple em uma constante, além de antes definir outro valor a ela.
 ```
@@ -47,7 +47,7 @@ set static exemple to f@"Bem vindo, Sr. ${ExempleName}!"; § Transforma a variá
 - - Altera o valor de uma [Var](https://github.com/lucasFelixSilveira/pLang#-------vari%C3%A1veis-e-constantes--).
 ```
 const:string ExempleName = "Lucas"; § Declara o nome do usuário
-var:string exemple = "Carregando..."; § Declara uma string que contém o conteúdo da constante ExempleName.
+var:string exemple = "Carregando..."; § Declara uma string "sem conteúdo"
 
-set exemple > f@"Bem vindo, Sr. ${ExempleName}!"; § Transforma a variável exemple em uma constante, além de antes definir outro valor a ela.
+set exemple > f@"Bem vindo, Sr. ${ExempleName}!"; § Define um novo valor a variável exemple.
 ```
