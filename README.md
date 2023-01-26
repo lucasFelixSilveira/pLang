@@ -29,7 +29,7 @@ const:string text = "Hello world"
 </h2>
 
 - O método set pode ser usado para diversas coisas:
-- - Transformar uma [Var](https://github.com/lucasFelixSilveira/pLang#-------vari%C3%A1veis-e-constantes--) em uma [Constante](https://github.com/lucasFelixSilveira/pLang#-------vari%C3%A1veis-e-constantes--) (Irreversível)
+- - Transformar uma [Var](https://github.com/lucasFelixSilveira/pLang#-------vari%C3%A1veis-e-constantes--) em uma [Const](https://github.com/lucasFelixSilveira/pLang#-------vari%C3%A1veis-e-constantes--) (Irreversível)
 ```
 const:string ExempleName = "Lucas"; § Declara o nome do usuário
 var:string exemple = f@"Bem vindo, Sr. ${ExempleName}!"; § Declara uma string que contém o conteúdo da constante ExempleName.
